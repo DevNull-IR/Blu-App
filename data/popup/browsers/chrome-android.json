@@ -1,0 +1,23 @@
+
+[{
+    "ua": "Mozilla/5.0 (Linux; Android 12; CPH2199) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+    "browser": {
+        "name": "Chrome",
+        "version": "107.0.0.0",
+        "major": "107"
+    },
+    "engine": {
+        "name": "Blink",
+        "version": "107.0.0.0"
+    },
+    "os": {
+        "name": "Android",
+        "version": "12.0"
+    },
+    "device": {
+        "vendor": "OPPO",
+        "model": "CPH2199",
+        "type": "mobile"
+    },
+    "cpu": []
+}]
