@@ -9,9 +9,13 @@ if(localStorage.getItem("autoRefreshApp") == null){
   let EndBtnCheck = localStorage.getItem("autoRefreshApp") == "true" ? true : false;
   btn_check.checked = EndBtnCheck;
 }
+
+
 btn_check.onchange = function(e){
   localStorage.setItem("autoRefreshApp", e.target.checked);
 };
+
+
 chrome.storage.local.get('startORstopApp', function (result) {
   if(result.startORstopApp == "true"){
     stopBlu.removeAttribute("disabled");
@@ -234,6 +238,7 @@ document.addEventListener('click', ({target}) => {
       });
         // prevent a container ua string from overwriting the default one
         if ('cookieStoreId' in tab && tab.cookieStoreId !== DCSI) {
+          console.log("a")
           chrome.runtime.sendMessage({
             method: 'request-update',
             value,
@@ -257,9 +262,13 @@ document.addEventListener('click', ({target}) => {
           }          
         }
         else {
-          chrome.storage.local.set({
+          console.log("b", value)
+          console.log(chrome.storage.local.set({
             ua: value
-          });
+          }));
+          chrome.storage.local.get("ua", function(a){
+            console.log(a.ua, navigator.userAgent)
+          })
           if(localStorage.getItem("autoRefreshApp") == "true"){
             chrome.tabs.query({
               active: true,

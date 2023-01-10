@@ -15,6 +15,12 @@
   "optional_permissions": [
     "cookies"
   ],
+  "background":{
+    "scripts":[
+      "ua-parser.min.js",
+      "common.js"
+    ]
+  },
   "icons": {
     "16": "./data/icons/active/16.png",
     "18": "./data/icons/active/18.png",
