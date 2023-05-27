@@ -1,0 +1,51 @@
+{
+    "manifest_version": 2,
+    "name": "ḃlu Bank",
+    "description": "Open ḃlu Bank on the desktop..",
+    "version": "1.1",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "storage",
+        "https://app.blubank.com/*"
+    ],
+    "background": {
+        "scripts": [ "background.js" ]
+    },
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "options_ui": {
+        "page": "options/index.html",
+        "chrome_style": true,
+        "open_in_tab": true
+    },
+    "content_scripts": [
+        {
+            "js": [ "content_script.js" ],
+            "matches": [ "https://app.blubank.com/*" ],
+            "run_at": "document_start"
+        }
+    ],
+    "icons": {
+        "16": "./data/icons/active/16.png",
+        "18": "./data/icons/active/18.png",
+        "19": "./data/icons/active/19.png",
+        "32": "./data/icons/active/32.png",
+        "36": "./data/icons/active/36.png",
+        "38": "./data/icons/active/38.png",
+        "48": "./data/icons/active/48.png",
+        "64": "./data/icons/active/64.png",
+        "72": "./data/icons/active/72.png",
+        "120": "./data/icons/active/120.png",
+        "128": "./data/icons/active/128.png",
+        "144": "./data/icons/active/144.png",
+        "152": "./data/icons/active/152.png",
+        "167": "./data/icons/active/167.png",
+        "180": "./data/icons/active/180.png",
+        "192": "./data/icons/active/192.png",
+        "256": "./data/icons/active/256.png",
+        "384": "./data/icons/active/384.png",
+        "512": "./data/icons/active/512.png"
+    }
+}
