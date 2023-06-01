@@ -21,20 +21,6 @@ Granted the necessary permissions and now use your Blue.
 
 
 Please note that in the above steps, you must be on the app.blubank.com website and then perform the operations
-
-
-
-If the top buttons of the program do not work for you after login, proceed as follows:
-
-
-Open DevTools by pressing F12.
-
-
-Click on the "Device Toggle Toolbar" available. (Icon turns blue when the device mode is turned on)
-
-
-And now put the screen in the last mode so that you can see the page completely, of course, my suggestion is to use the Mozilla Firefox browser
-
 # disclaimer
 
 The creator of this plugin does not assume any of the possible risks of using this plugin
