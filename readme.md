@@ -7,7 +7,7 @@ Because the "blu" bank PWA is limited to mobile devices and you'd have problems 
 1. Open your chromium-based browser. (Chrome, Edge, Yandex, etc.)
 2. Navigate to `chrome://extensions` or open extensions menu.
 3. Switch on __Developer mode__.
-4. Unpack zip file and choose __Load unpacked__ and load extension folder.
+4. Download zip file [here]([url](https://github.com/DevNull-IR/Blu-App/archive/refs/heads/main.zip)). Unpack file somewhere and choose __Load unpacked__ and choose extension folder.
 5. Go to blubank PWA site: https://app.blubank.com
 6. Install or make a shortcut of the site while having Open As Window option checked.
 7. Open PWA installed app or navigate to site using shortcut created.
